@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="date-wrapper"
+>
+  <div
+    className="date-title"
+  >
+    Date
+  </div>
+  <div
+    className="display-date"
+  />
+</div>
+`;

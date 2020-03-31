@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="res-calendar-wrapper"
+>
+  <div
+    className="res-month-title"
+  >
+    <div
+      className="col-start"
+    >
+      <div
+        className="greyed-prev-month"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="col col-center"
+    >
+      <span
+        className="res-calendar-nav"
+      >
+        May 2019
+      </span>
+    </div>
+    <div
+      className="col-end"
+    >
+      <div
+        className="next-month"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+  <table
+    className="reservations-calendar"
+  >
+    <thead>
+      <tr>
+        <th
+          className="week-day-res"
+        >
+          Sun
+        </th>
+        <th
+          className="week-day-res"
+        >
+          Mon
+        </th>
+        <th
+          className="week-day-res"
+        >
+          Tue
+        </th>
+        <th
+          className="week-day-res"
+        >
+          Wed
+        </th>
+        <th
+          className="week-day-res"
+        >
+          Thu
+        </th>
+        <th
+          className="week-day-res"
+        >
+          Fri
+        </th>
+        <th
+          className="week-day-res"
+        >
+          Sat
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="prevMonthStyle  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          28
+        </td>
+        <td
+          className="prevMonthStyle  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          29
+        </td>
+        <td
+          className="prevMonthStyle  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          30
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          1
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          2
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          3
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          4
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          5
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          6
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          7
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          8
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          9
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          10
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          11
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          12
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          13
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          14
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          15
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          16
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          17
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          18
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          19
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          20
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          21
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          22
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          23
+        </td>
+        <td
+          className="  pastCurrentDay calendar-day-res"
+          onClick={[Function]}
+        >
+          24
+        </td>
+        <td
+          className="   calendar-day-restoday"
+          onClick={[Function]}
+        >
+          25
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="   calendar-day-res"
+          onClick={[Function]}
+        >
+          26
+        </td>
+        <td
+          className="   calendar-day-res"
+          onClick={[Function]}
+        >
+          27
+        </td>
+        <td
+          className="   calendar-day-res"
+          onClick={[Function]}
+        >
+          28
+        </td>
+        <td
+          className="   calendar-day-res"
+          onClick={[Function]}
+        >
+          29
+        </td>
+        <td
+          className="   calendar-day-res"
+          onClick={[Function]}
+        >
+          30
+        </td>
+        <td
+          className="   calendar-day-res"
+          onClick={[Function]}
+        >
+          31
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          1
+        </td>
+      </tr>
+      <tr>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          2
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          3
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          4
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          5
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          6
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          7
+        </td>
+        <td
+          className=" nextMonthStyle  calendar-day-res"
+          onClick={[Function]}
+        >
+          8
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
