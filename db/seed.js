@@ -1,53 +1,46 @@
+const fs = require('fs');
 const faker = require('faker');
-
-const Availability = require('./db.js');
-
-const seats = () => faker.random.number({
-  min: 2,
-  max: 10,
-});
 
 const booked = () => faker.random.number({
   min: 3,
   max: 15,
 });
 
-Availability.sync({ force: true })
-  .then(() => Availability.create({
-    name: 'Kinjo',
-    booked: booked(),
-    '6:00 PM': seats(),
-    '6:15 PM': seats(),
-    '6:30 PM': seats(),
-    '6:45 PM': seats(),
-    '7:00 PM': seats(),
-    '7:15 PM': seats(),
-    '7:30 PM': seats(),
-    '7:45 PM': seats(),
-    '8:00 PM': seats(),
-    '8:15 PM': seats(),
-    '8:30 PM': seats(),
-  }))
-  .then(() => {
-    for (let i = 1; i < 100; i++) {
-      Availability.create({
-        name: faker.lorem.word(),
-        booked: booked(),
-        '6:00 PM': seats(),
-        '6:15 PM': seats(),
-        '6:30 PM': seats(),
-        '6:45 PM': seats(),
-        '7:00 PM': seats(),
-        '7:15 PM': seats(),
-        '7:30 PM': seats(),
-        '7:45 PM': seats(),
-        '8:00 PM': seats(),
-        '8:15 PM': seats(),
-        '8:30 PM': seats(),
-      });
+const seats = () => faker.random.number({
+  min: 2,
+  max: 10,
+});
+
+const seatsForAllTimeWindows = () => {
+  let allSeats = '';
+  for (var i = 0; i < 11; i++) {
+    if (i !== 10) {
+      allSeats += seats() + ',';
+    } else {
+      allSeats += seats();
     }
-    console.log('seeded 100 restaurants');
+  }
+  return allSeats;
+}
+
+const createRestaurants = () => {
+  const restaurantStream = fs.createWriteStream('10MilRestaurants.csv', { flags: 'a' });
+  for (let i = 0; i < 10000000; i++) {
+    let restaurant = '';
+    restaurant += "'" + faker.lorem.word() + "'" + ',';
+    restaurant += booked() + ','
+    restaurant += seatsForAllTimeWindows() + '\n';
+    restaurantStream.write(restaurant);
+  }
+  restaurantStream.end();
+  restaurantStream.on('finish', () => {
+    console.log('stream finished')
   })
-  .catch((err) => {
-    console.log('unable to seed db: ', err);
-  });
+  restaurantStream.on('error', () => {
+    console.log('error in stream');
+  })
+}
+
+createRestaurants()
+
+// in psql: COPY restaurants FROM 'absolute path to seeded file' DELIMETER ',' ;

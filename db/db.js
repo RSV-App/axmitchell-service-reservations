@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
 
 // change user: 'root' and password: 'password' with your credentials
-const sequelize = new Sequelize('reservations', 'root', 'password', {
+const sequelize = new Sequelize('reservations', 'root', '', {
   host: 'localhost',
-  dialect: 'mysql',
+  dialect: 'postgres',
   logging: false,
 });
 
