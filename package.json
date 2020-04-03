@@ -8,7 +8,7 @@
     "start-dev": "nodemon server/connection.js",
     "build": "webpack -d",
     "start": "node server/connection.js",
-    "seed": "node --max-old-space-size=4096 db/seed.js",
+    "seed": "node --max-old-space-size=8192 db/seed.js",
     "test": "jest"
   },
   "repository": {
