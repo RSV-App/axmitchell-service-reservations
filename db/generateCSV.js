@@ -13,8 +13,8 @@ const seatsAvailable = () => faker.random.number({
 
 const availableTimes = ['6:00pm','6:15pm','6:30pm','6:45pm','7:00pm','7:15pm','7:30pm','7:45pm','8:00pm','8:15pm','8:30pm'];
 
-const restaurantStream = fs.createWriteStream('10MilRestaurants.csv', { flags: 'a' });
-const availabilitiesStream = fs.createWriteStream('110MilAvailabilities.csv', { flags: 'a' });
+const restaurantStream = fs.createWriteStream('./generatedData/10MilRestaurants.csv', { flags: 'a' });
+const availabilitiesStream = fs.createWriteStream('./generatedData/110MilAvailabilities.csv', { flags: 'a' });
 
 const promiseToDrain = (writeStream, data) => {
   if (!writeStream.write(data)) {

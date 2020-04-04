@@ -11,9 +11,7 @@ const seatsAvailable = () => faker.random.number({
   max: 10,
 });
 
-const availableTimes = ['6:00pm','6:15pm','6:30pm','6:45pm','7:00pm','7:15pm','7:30pm','7:45pm','8:00pm','8:15pm','8:30pm'];
-
-const restaurantStream = fs.createWriteStream('10MilRestaurants.json', {flags: 'a'});
+const restaurantStream = fs.createWriteStream('./generatedData/10MilRestaurants.json', {flags: 'a'});
 
 const promiseToDrain = (writeStream, data) => {
   if (!writeStream.write(data)) {
@@ -57,4 +55,7 @@ const generateRestaurantJSON = async (amount) => {
   restaurantStream.write(']');
 }
 
-generateRestaurantJSON(1000);
+generateRestaurantJSON(10000000)
+  .then(() => {
+    console.log('finished generating JSON file')
+  })
