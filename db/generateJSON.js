@@ -30,17 +30,17 @@ const generateRestaurantJSON = async (amount) => {
     restaurant.name = faker.lorem.word();
     restaurant.booked = tablesBookedSoFar();
     restaurant.availabilities = {
-      '6:00pm': seatsAvailable(),
-      '6:15pm': seatsAvailable(),
-      '6:30pm': seatsAvailable(),
-      '6:45pm': seatsAvailable(),
-      '7:00pm': seatsAvailable(),
-      '7:15pm': seatsAvailable(),
-      '7:30pm': seatsAvailable(),
-      '7:45pm': seatsAvailable(),
-      '8:00pm': seatsAvailable(),
-      '8:15pm': seatsAvailable(),
-      '8:30pm': seatsAvailable()
+      '6:00 PM': seatsAvailable(),
+      '6:15 PM': seatsAvailable(),
+      '6:30 PM': seatsAvailable(),
+      '6:45 PM': seatsAvailable(),
+      '7:00 PM': seatsAvailable(),
+      '7:15 PM': seatsAvailable(),
+      '7:30 PM': seatsAvailable(),
+      '7:45 PM': seatsAvailable(),
+      '8:00 PM': seatsAvailable(),
+      '8:15 PM': seatsAvailable(),
+      '8:30 PM': seatsAvailable()
     };
     let stringifiedRestaurant = JSON.stringify(restaurant);
     if (restaurantId < amount) {
