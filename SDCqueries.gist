@@ -1,0 +1,39 @@
+PostgreSQL
+
+reservations=# SELECT * from restaurants3 where id=8132832
+;
+   id    | booked | 6:00 PM | 6:15 PM | 6:30 PM | 6:45 PM | 7:00 PM | 7:15 PM | 7:30 PM | 7:45 PM | 8:00 PM | 8:15 PM | 8:30 PM 
+---------+--------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------
+ 8132832 |      3 |       9 |       7 |       3 |       4 |       2 |       4 |       9 |       7 |       6 |       2 |       6
+(1 row)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+ArangoDB
+
+127.0.0.1:8529@SDC> db._query("FOR doc IN restaurants FILTER doc.id == 2 RETURN doc");
+[object ArangoQueryCursor, count: 1, cached: false, hasMore: false]
+
+[ 
+  { 
+    "_key" : "57693", 
+    "_id" : "restaurants/57693", 
+    "_rev" : "_aSdT4q2---", 
+    "id" : 2, 
+    "name" : "eum", 
+    "booked" : 9, 
+    "availabilities" : { 
+      "6:00pm" : 2, 
+      "6:15pm" : 9, 
+      "6:30pm" : 5, 
+      "6:45pm" : 8, 
+      "7:00pm" : 2, 
+      "7:15pm" : 4, 
+      "7:30pm" : 8, 
+      "7:45pm" : 9, 
+      "8:00pm" : 9, 
+      "8:15pm" : 8, 
+      "8:30pm" : 9 
+    } 
+  } 
+]
