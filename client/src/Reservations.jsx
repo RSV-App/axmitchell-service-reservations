@@ -210,8 +210,8 @@ class Reservations extends React.Component {
 
   getBookings() {
     let parseId = this.props.urlId.split('/');
-    const id = parseId[parseId.length - 1];
-    axios.get(`http://localhost:3020/${id}/reservations`)
+    const id = parseId[parseId.length - 2];
+    axios.get(`/${id}/reservations`)
       .then((res) => {
         this.setState({
           bookings: res.data.booked,

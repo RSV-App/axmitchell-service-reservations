@@ -1,0 +1,6 @@
+node_modules
+public/bundles.js
+package-lock.json
+db/generatedData
+newrelic.js
+newrelic_agent.log
