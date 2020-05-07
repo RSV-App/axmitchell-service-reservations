@@ -1,6 +1,6 @@
-# freeSeats
+#Reviews and Impressions Module
 
-> A user can search for a restaurant based on location, cuisine, or restaurant’s name and visit the restaurant’s page to get an overview of what the restaurant has to offer like photos of their dishes, their menu options, customers’ reviews, and be able to make a reservation.
+This module is part of the FreeSeats restaurant reservation app. It allows a user to make a reservation for the selected restaurant.
 
 ## Table of Contents
 
@@ -8,15 +8,8 @@
 1. [Usage](#Usage)
 
 ### Seeding Database
-- Before seeding, make sure to npm install
-- Log into postgres from terminal: postgres -u root -p
-- Enter password if set up with one
-- If 'reservations' database exists in postgres: drop database reservations;
-- Create database in postgres: create database reservations;
-- Select database: use reservations;
-- Go to db/db.js to change your user and password on line 4
-- Run script: npm run seed
-- To check 'reservations' database: select * from restaurants;
+- Run script: npm run generateCSV
+- Import generated csv file into Postgres database table, reservations
 
 ## Usage
 
@@ -24,7 +17,7 @@ From within the root directory:
 ```sh
 npm install
 npm run build
-npm start
+npm run start
 ```
 - In a broswer, go to: localhost:3020/:id
-- (ex) Choose from restaurants with ids from 1 to 100: localhost:3020/1
+- (ex) Choose from restaurants with ids from 1 to 10,000,000: localhost:3020/1
