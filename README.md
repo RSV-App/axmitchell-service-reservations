@@ -1,4 +1,4 @@
-#Reviews and Impressions Module
+# Reviews and Impressions Module
 
 This module is part of the FreeSeats restaurant reservation app. It allows a user to make a reservation for the selected restaurant.
 
