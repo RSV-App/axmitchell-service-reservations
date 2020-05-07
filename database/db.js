@@ -1,12 +1,12 @@
 const Sequelize = require('sequelize');
 
-const EC2_IP = '';
+const EC2_Address = '';
 const dbName = '';
 const dbUser = ''
 const dbUserPassword = '';
 
 const sequelize = new Sequelize(dbName, dbUser, dbUserPassword, {
-  host: `ec2-${EC2_IP}.us-west-2.compute.amazonaws.com`,
+  host: EC2_Address,
   dialect: 'postgres',
   port: 5432,
   maxConcurrentQueries: 1000,

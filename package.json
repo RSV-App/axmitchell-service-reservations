@@ -9,7 +9,6 @@
     "build": "webpack -d",
     "start": "node server/connection.js",
     "generateCSV": "node db/generateCSV.js",
-    "generateJSON": "node db/generateJSON.js",
     "test": "jest"
   },
   "repository": {

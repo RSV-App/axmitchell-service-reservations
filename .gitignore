@@ -1,6 +1,6 @@
 node_modules
 public/bundles.js
 package-lock.json
-db/generatedData
+database/util/generatedData
 newrelic.js
 newrelic_agent.log
