@@ -54,7 +54,7 @@
     "file-loader": "^3.0.1",
     "fs": "0.0.1-security",
     "identity-obj-proxy": "^3.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "newrelic": "^6.5.0",
     "nodemon": "^1.19.0",
     "pg": "^8.0.0",
